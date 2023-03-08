@@ -13,7 +13,8 @@ Notes on Constness Exercise:
    has been intialized where the cs before/after always match since the strings 
    cannot be modified after it has been intialized.
 
-3. The reason the call to the overloaded_func() are different since the first call     is to a non costant &s while the second call is to a const &s function. That's
+3. The reason the call to the overloaded_func() are different since the first call     
+   is to a non costant &s while the second call is to a const &s function. That's
    why the outputs are different for the both the calls.
 
 4. The compiler always allows s.size() to be called but sometimes rejects calls
