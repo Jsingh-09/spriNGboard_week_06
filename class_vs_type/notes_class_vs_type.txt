@@ -1,7 +1,8 @@
 Notes Type vs Class:
 
 1. LINE1  Declares a variable x and initializes it's value to "Hello"
-   LINE2  Creates a reference variable rx of string type and sets that to variable x   LINE3  Creates a constant reference variable crx of string type and sets that to
+   LINE2  Creates a reference variable rx of string type and sets that to variable x   
+   LINE3  Creates a constant reference variable crx of string type and sets that to
           x as well.
 
 2. The outputs results in the same memory address for all the values. Since they
