@@ -21,17 +21,37 @@ class Cow : public Animal
 class FullCow : public Cow
 {
   public:
-    virtual void make_sound () const override
+    void make_sound () const override
     { cout << "Ooof - I ate too much" << endl; }
+};
+
+// New Classes added from derived Animal
+class HalfFullCow : public Animal
+{
+  public:
+    virtual void make_sound() const override
+    { cout << "I'm still hungry" << endl; }
+};
+
+// New Classes added from derived Animal
+class NotFullCow: public Animal
+{
+  public:
+    virtual void make_sound() const override
+    { cout << "I need food" << endl;}
 };
 
 int main ()
 {
   Cow c;
   FullCow fc;
+  HalfFullCow hfc;
+  NotFullCow Nfc;
 
   poke(c);
   poke(fc);
+  poke(hfc);
+  poke(Nfc);
 
   return 0;
 }
